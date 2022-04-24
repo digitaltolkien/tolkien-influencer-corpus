@@ -1,11 +1,12 @@
 <!ELEMENT work (header, body)>
+<!ATTLIST work n NMTOKEN #REQUIRED>
 <!ELEMENT header (title, author, publication-year)>
 <!ELEMENT title (#PCDATA)>
 <!ELEMENT author (#PCDATA)>
 <!ELEMENT publication-year (#PCDATA)>
 <!ELEMENT body (div+)>
-<!ELEMENT div (head, (p|verse)+)>
-<!ATTLIST div type NMTOKEN #FIXED "chapter">
+<!ELEMENT div (head, (div|p|verse)+)>
+<!ATTLIST div type (book|chapter) #REQUIRED>
 <!ATTLIST div n NMTOKEN #REQUIRED>
 <!ELEMENT head (#PCDATA)>
 <!ELEMENT p (#PCDATA)>
