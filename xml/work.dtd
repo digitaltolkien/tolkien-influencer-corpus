@@ -5,11 +5,14 @@
 <!ELEMENT author (#PCDATA)>
 <!ELEMENT publication-year (#PCDATA)>
 <!ELEMENT body (div+)>
-<!ELEMENT div (head, (div|p|verse)+)>
+<!ELEMENT div (head, (div|p|verse|letter|sb)+)>
 <!ATTLIST div type (book|chapter) #REQUIRED>
 <!ATTLIST div n NMTOKEN #REQUIRED>
 <!ELEMENT head (#PCDATA)>
-<!ELEMENT p (#PCDATA)>
+<!ELEMENT p (#PCDATA|i)*>
 <!ELEMENT verse (lg+)>
 <!ELEMENT lg (l+)>
 <!ELEMENT l (#PCDATA)>
+<!ELEMENT i (#PCDATA)>
+<!ELEMENT sb EMPTY>
+<!ELEMENT letter (#PCDATA)>
