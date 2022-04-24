@@ -6,8 +6,8 @@
 <!ELEMENT publication-year (#PCDATA)>
 <!ELEMENT body (div+)>
 <!ELEMENT div (head, (div|p|verse|letter|sb)+)>
-<!ATTLIST div type (book|chapter) #REQUIRED>
-<!ATTLIST div n NMTOKEN #REQUIRED>
+<!ATTLIST div type (book|chapter|preface|story|epilogue) #REQUIRED>
+<!ATTLIST div n NMTOKEN #IMPLIED>
 <!ELEMENT head (#PCDATA)>
 <!ELEMENT p (#PCDATA|i)*>
 <!ELEMENT verse (lg+)>
