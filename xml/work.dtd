@@ -1,0 +1,14 @@
+<!ELEMENT work (header, body)>
+<!ELEMENT header (title, author, publication-year)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT publication-year (#PCDATA)>
+<!ELEMENT body (div+)>
+<!ELEMENT div (head, (p|verse)+)>
+<!ATTLIST div type NMTOKEN #FIXED "chapter">
+<!ATTLIST div n NMTOKEN #REQUIRED>
+<!ELEMENT head (#PCDATA)>
+<!ELEMENT p (#PCDATA)>
+<!ELEMENT verse (lg+)>
+<!ELEMENT lg (l+)>
+<!ELEMENT l (#PCDATA)>
