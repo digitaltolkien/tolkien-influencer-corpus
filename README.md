@@ -13,7 +13,7 @@ a collection of works thought to have influenced Tolkien's writing
 
 If you have other suggestions for out-of-copyright works to include, please contact me.
 
-raw/ — the raw files downloaded from Project Gutenberg
-txt/ — the cleaned up text files with Project Gutenberg boilerplate removed
-xml/ — XML versions of each work marked up
-metadata.tsv — summary of metadata on each work
+* `raw/` — the raw files downloaded from Project Gutenberg
+* `txt/` — the cleaned up text files with Project Gutenberg boilerplate removed
+* `xml/` — XML versions of each work marked up
+* `metadata.tsv` — summary of metadata on each work
